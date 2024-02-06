@@ -1,0 +1,40 @@
+name: Spawners
+version: '${project.version}'
+main: org.achymake.spawners.Spawners
+api-version: '1.19'
+prefix: '${project.name}'
+load: STARTUP
+author: AchyMake
+description: '${project.description}'
+commands:
+  spawner:
+    description: get spawners
+    permission: spawners.command.spawner
+  spawners:
+    description: get spawners
+    permission: spawners.command.spawners
+permissions:
+  spawners.command.spawner:
+    description: get spawner by command
+    default: op
+  spawners.command.spawners:
+    description: spawners command
+    default: op
+  spawners.command.spawners.check:
+    description: check spawners
+    default: op
+  spawners.command.spawners.reload:
+    description: reload config
+    default: op
+  spawners.event.block-break.spawner:
+    description: allows to obtain spawner using silk touch
+    default: op
+  spawners.event.block-break.spawner.no-silk:
+    description: allows to obtain spawner without silk touch
+    default: op
+  spawners.event.block-break.budding-amethyst:
+    description: allows to obtain budding amethyst using silk touch
+    default: op
+  spawners.event.block-break.budding-amethyst.no-silk:
+    description: allows to obtain budding amethyst without silk touch
+    default: op

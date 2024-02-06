@@ -1,0 +1,235 @@
+notify-update: true
+max-level: 6
+spawners:
+  ALLAY:
+    name: "&dAllay Spawner"
+    lore:
+      - "&9level:&f {0}"
+  AXOLOTL:
+    name: "&dAxolotl Spawner"
+    lore:
+      - "&9level:&f {0}"
+  BAT:
+    name: "&dBat Spawner"
+    lore:
+      - "&9level:&f {0}"
+  BEE:
+    name: "&dBee Spawner"
+    lore:
+      - "&9level:&f {0}"
+  BLAZE:
+    name: "&dBlaze Spawner"
+    lore:
+      - "&9level:&f {0}"
+  CAMEL:
+    name: "&dCamel Spawner"
+    lore:
+      - "&9level:&f {0}"
+  CAT:
+    name: "&dCat Spawner"
+    lore:
+      - "&9level:&f {0}"
+  CAVE_SPIDER:
+    name: "&dCave Spider Spawner"
+    lore:
+      - "&9level:&f {0}"
+  CHICKEN:
+    name: "&dChicken Spawner"
+    lore:
+      - "&9level:&f {0}"
+  COW:
+    name: "&dCow Spawner"
+    lore:
+      - "&9level:&f {0}"
+  CREEPER:
+    name: "&dCreeper Spawner"
+    lore:
+      - "&9level:&f {0}"
+  DONKEY:
+    name: "&dDonkey Spawner"
+    lore:
+      - "&9level:&f {0}"
+  DROWNED:
+    name: "&dDrowned Spawner"
+    lore:
+      - "&9level:&f {0}"
+  ENDERMAN:
+    name: "&dEnderman Spawner"
+    lore:
+      - "&9level:&f {0}"
+  ENDERMITE:
+    name: "&dEndermite Spawner"
+    lore:
+      - "&9level:&f {0}"
+  EVOKER:
+    name: "&dEvoker Spawner"
+    lore:
+      - "&9level:&f {0}"
+  FOX:
+    name: "&dFox Spawner"
+    lore:
+      - "&9level:&f {0}"
+  FROG:
+    name: "&dFrog Spawner"
+    lore:
+      - "&9level:&f {0}"
+  GHAST:
+    name: "&dGhast Spawner"
+    lore:
+      - "&9level:&f {0}"
+  GOAT:
+    name: "&dGoat Spawner"
+    lore:
+      - "&9level:&f {0}"
+  HOGLIN:
+    name: "&dHoglin Spawner"
+    lore:
+      - "&9level:&f {0}"
+  HORSE:
+    name: "&dHorse Spawner"
+    lore:
+      - "&9level:&f {0}"
+  HUSK:
+    name: "&dHusk Spawner"
+    lore:
+      - "&9level:&f {0}"
+  ILLUSIONER:
+    name: "&dIllusioner Spawner"
+    lore:
+      - "&9level:&f {0}"
+  IRON_GOLEM:
+    name: "&dIron Golem Spawner"
+    lore:
+      - "&9level:&f {0}"
+  LLAMA:
+    name: "&dLlama Spawner"
+    lore:
+      - "&9level:&f {0}"
+  MAGMA_CUBE:
+    name: "&dMagma Cube Spawner"
+    lore:
+      - "&9level:&f {0}"
+  MULE:
+    name: "&dMule Spawner"
+    lore:
+      - "&9level:&f {0}"
+  MUSHROOM_COW:
+    name: "&dMushroom Cow Spawner"
+    lore:
+      - "&9level:&f {0}"
+  OCELOT:
+    name: "&dOcelot Spawner"
+    lore:
+      - "&9level:&f {0}"
+  PANDA:
+    name: "&dPanda Spawner"
+    lore:
+      - "&9level:&f {0}"
+  PARROT:
+    name: "&dParrot Spawner"
+    lore:
+      - "&9level:&f {0}"
+  PHANTOM:
+    name: "&dPhantom Spawner"
+    lore:
+      - "&9level:&f {0}"
+  PIG:
+    name: "&dPig Spawner"
+    lore:
+      - "&9level:&f {0}"
+  PIGLIN:
+    name: "&dPiglin Spawner"
+    lore:
+      - "&9level:&f {0}"
+  PIGLIN_BRUTE:
+    name: "&dPiglin Brute Spawner"
+    lore:
+      - "&9level:&f {0}"
+  PILLAGER:
+    name: "&dPillager Spawner"
+    lore:
+      - "&9level:&f {0}"
+  POLAR_BEAR:
+    name: "&dPolar Bear Spawner"
+    lore:
+      - "&9level:&f {0}"
+  RABBIT:
+    name: "&dRabbit Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SHEEP:
+    name: "&dSheep Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SHULKER:
+    name: "&dShulker Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SILVERFISH:
+    name: "&dSilverfish Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SKELETON:
+    name: "&dSkeleton Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SKELETON_HORSE:
+    name: "&dSkeleton Horse Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SLIME:
+    name: "&dSlime Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SNIFFER:
+    name: "&dSniffer Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SPIDER:
+    name: "&dSpider Spawner"
+    lore:
+      - "&9level:&f {0}"
+  SQUID:
+    name: "&dSquid Spawner"
+    lore:
+      - "&9level:&f {0}"
+  STRAY:
+    name: "&dStray Spawner"
+    lore:
+      - "&9level:&f {0}"
+  VEX:
+    name: "&dVex Spawner"
+    lore:
+      - "&9level:&f {0}"
+  VILLAGER:
+    name: "&dVillager Spawner"
+    lore:
+      - "&9level:&f {0}"
+  VINDICATOR:
+    name: "&dVindicator Spawner"
+    lore:
+      - "&9level:&f {0}"
+  WITCH:
+    name: "&dWitch Spawner"
+    lore:
+      - "&9level:&f {0}"
+  WITHER_SKELETON:
+    name: "&dWither Skeleton Spawner"
+    lore:
+      - "&9level:&f {0}"
+  ZOGLIN:
+    name: "&dZoglin Spawner"
+    lore:
+      - "&9level:&f {0}"
+  ZOMBIE:
+    name: "&dZombie Spawner"
+    lore:
+      - "&9level:&f {0}"
+  ZOMBIE_VILLAGER:
+    name: "&dZombie Villager Spawner"
+    lore:
+      - "&9level:&f {0}"
+  ZOMBIFIED_PIGLIN:
+    name: "&dZombified Piglin Spawner"
+    lore:
+      - "&9level:&f {0}"
