@@ -25,13 +25,17 @@ public class SpawnersCommand implements CommandExecutor, TabCompleter {
                 if (args[0].equalsIgnoreCase("check")) {
                     if (player.hasPermission("spawners.command.spawners.check")) {
                         Block block = player.getTargetBlockExact(3);
-                        if (block != null) {
+                        if (block == null) {
+                            plugin.send(player, "&cYou have to look at a spawner at least within 3 blocks");
+                        } else {
                             if (block.getType().equals(Material.SPAWNER)) {
                                 if (block.getState() instanceof CreatureSpawner creatureSpawner) {
                                     plugin.send(player, "&7Spawner Information:");
                                     plugin.send(player, "&7Type:&f " + creatureSpawner.getSpawnedType());
                                     plugin.send(player, "&7Level:&f " + creatureSpawner.getSpawnCount());
                                 }
+                            } else {
+                                plugin.send(player, "&cYou have to look at a spawner at least within 3 blocks");
                             }
                         }
                     }
