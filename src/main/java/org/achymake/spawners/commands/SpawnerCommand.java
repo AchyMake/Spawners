@@ -34,7 +34,12 @@ public class SpawnerCommand implements CommandExecutor, TabCompleter {
                 giveSpawner(player, getSpawner(args[0].toUpperCase(), Integer.parseInt(args[1]), 1));
             }
             if (args.length == 3) {
-                giveSpawner(player, getSpawner(args[0].toUpperCase(), Integer.parseInt(args[1]), Integer.parseInt(args[2])));
+                int level = Integer.parseInt(args[2]);
+                if (plugin.getConfig().getInt("max-level") > level) {
+                    giveSpawner(player, getSpawner(args[0].toUpperCase(), Integer.parseInt(args[1]), Integer.parseInt(args[2])));
+                } else {
+                    plugin.send(player, "&cYou can only max level to&f " + plugin.getConfig().getInt("max-level"));
+                }
             }
         }
         return true;
@@ -51,7 +56,7 @@ public class SpawnerCommand implements CommandExecutor, TabCompleter {
             if (args.length == 2) {
                 commands.add("1");
                 commands.add("2");
-                commands.add("5");
+                commands.add("3");
             }
             if (args.length == 3) {
                 commands.add("1");
