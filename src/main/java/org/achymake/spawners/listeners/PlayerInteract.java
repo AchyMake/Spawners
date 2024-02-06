@@ -34,7 +34,7 @@ public record PlayerInteract(Spawners plugin) implements Listener {
         PersistentDataContainer container = itemMeta.getPersistentDataContainer();
         if (container.has(NamespacedKey.minecraft("count"), PersistentDataType.INTEGER)) {
             int level = container.get(NamespacedKey.minecraft("count"), PersistentDataType.INTEGER);
-            if (plugin.getConfig().getInt("max-level") > level) {
+            if (plugin.getConfig().getInt("max-level") > creatureSpawner.getSpawnCount()) {
                 int newLevel = creatureSpawner.getSpawnCount() + level;
                 creatureSpawner.setSpawnCount(newLevel);
                 creatureSpawner.update();
