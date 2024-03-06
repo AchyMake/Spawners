@@ -47,6 +47,26 @@ public class SpawnersCommand implements CommandExecutor, TabCompleter {
                     }
                 }
             }
+            if (args.length == 2) {
+                if (args[0].equalsIgnoreCase("set-level")) {
+                    if (player.hasPermission("spawners.command.spawners.set-level")) {
+                        Block block = player.getTargetBlockExact(3);
+                        if (block == null) {
+                            plugin.send(player, "&cYou have to look at a spawner at least within 3 blocks");
+                        } else {
+                            if (block.getType().equals(Material.SPAWNER)) {
+                                if (block.getState() instanceof CreatureSpawner creatureSpawner) {
+                                    creatureSpawner.setSpawnCount(Integer.valueOf(args[1]));
+                                    creatureSpawner.update();
+                                    plugin.send(player, "&7Spawner level changed to " + creatureSpawner.getSpawnCount());
+                                }
+                            } else {
+                                plugin.send(player, "&cYou have to look at a spawner at least within 3 blocks");
+                            }
+                        }
+                    }
+                }
+            }
         }
         return true;
     }
@@ -60,6 +80,18 @@ public class SpawnersCommand implements CommandExecutor, TabCompleter {
                 }
                 if (player.hasPermission("spawners.command.spawners.reload")) {
                     commands.add("reload");
+                }
+                if (player.hasPermission("spawners.command.spawners.set-level")) {
+                    commands.add("set-level");
+                }
+            }
+            if (args.length == 2) {
+                if (args[0].equalsIgnoreCase("set-level")) {
+                    if (player.hasPermission("spawners.command.spawners.set-level")) {
+                        commands.add("1");
+                        commands.add("2");
+                        commands.add("3");
+                    }
                 }
             }
         }
