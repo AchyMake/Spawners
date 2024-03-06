@@ -38,3 +38,6 @@ permissions:
   spawners.event.block-break.budding-amethyst.no-silk:
     description: allows to obtain budding amethyst without silk touch
     default: op
+  spawners.event.interact.upgrade:
+    description: allows to upgrade spawners
+    default: op

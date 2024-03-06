@@ -29,13 +29,16 @@ public record PlayerInteract(Spawners plugin) implements Listener {
         if (!block.getType().equals(Material.SPAWNER))return;
         if (!player.isSneaking())return;
         if (!heldItem.getType().equals(Material.SPAWNER))return;
+        if (!player.hasPermission("spawners.event.interact.upgrade"))return;
         if (!(block.getState() instanceof CreatureSpawner creatureSpawner))return;
         ItemMeta itemMeta = heldItem.getItemMeta();
         PersistentDataContainer container = itemMeta.getPersistentDataContainer();
         if (container.has(NamespacedKey.minecraft("count"), PersistentDataType.INTEGER)) {
             int level = container.get(NamespacedKey.minecraft("count"), PersistentDataType.INTEGER);
-            if (plugin.getConfig().getInt("max-level") > creatureSpawner.getSpawnCount()) {
-                int newLevel = creatureSpawner.getSpawnCount() + level;
+            int newLevel = creatureSpawner.getSpawnCount() + level;
+            if (newLevel > plugin.getConfig().getInt("max-level")) {
+                plugin.send(player, "&c&lHey! &7Sorry, but the spawner has reach max level");
+            } else {
                 creatureSpawner.setSpawnCount(newLevel);
                 creatureSpawner.update();
                 heldItem.setAmount(heldItem.getAmount() - 1);
