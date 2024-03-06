@@ -6,7 +6,7 @@
 
   <groupId>org.achymake</groupId>
   <artifactId>Spawners</artifactId>
-  <version>32</version>
+  <version>33</version>
   <packaging>jar</packaging>
 
   <name>Spawners</name>
